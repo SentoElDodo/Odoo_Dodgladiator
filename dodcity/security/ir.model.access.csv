@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dodcity_player,dodcity.player,model_dodcity_player,base.group_user,1,1,1,1
+access_dodcity_comedor,dodcity.comedor,model_dodcity_comedor,base.group_user,1,1,1,1
+access_dodcity_habitat,dodcity.habitat,model_dodcity_habitat,base.group_user,1,1,1,1
