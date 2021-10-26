@@ -1,0 +1,51 @@
+<odoo>
+  <data>
+  
+
+    <record model="ir.actions.act_window" id="dodcity.action_window">
+      <field name="name">dodcity inicio</field>
+      <field name="res_model">dodcity.player</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="dodcity.action_dodo">
+      <field name="name">dodo</field>
+      <field name="res_model">dodcity.comedor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="dodcity.action_habitat">
+      <field name="name">habitat</field>
+      <field name="res_model">dodcity.habitat</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+ 
+
+    <menuitem name="dodcity" id="dodcity.menu_root"/>
+
+    <!-- Habitats -->
+    <menuitem name="dodo" id="dodcity.menu_1" parent="dodcity.menu_root"/>
+    <menuitem name="habitat" id="dodcity.menu_2" parent="dodcity.menu_root"/>
+
+    <!-- Todos los habitats -->
+    <menuitem name="dodo" id="dodcity.menu_3" parent="dodcity.menu_2" action="dodcity.action_dodo"/>
+    <menuitem name="habitat1" id="dodcity.menu_3" parent="dodcity.menu_2" action="dodcity.action_habitat"/>
+    
+    <menuitem name="dodo" id="dodcity.menu_3" parent="dodcity.menu_2" action="dodcity.action_dodo"/>
+    <menuitem name="habitat2" id="dodcity.menu_4" parent="dodcity.menu_2" action="dodcity.action_habitat"/>
+
+    <!-- Esto ns que es -->
+    <menuitem name="List" id="dodcity.menu_1_list" parent="dodcity.menu_1"
+              action="dodcity.action_window"/>
+
+    <!-- Comedor -->
+    <menuitem name="dodo" id="dodcity.menu_5" parent="dodcity.menu_root" />
+    <menuitem name="comedor" id="dodcity.menu_5" parent="dodcity.menu_root" />
+    
+
+
+            
+
+  </data>
+</odoo>
